@@ -1,0 +1,386 @@
+{
+  "scope": "fixed affine-lambda certificate with an explicit ordinary closure-copy bridge; not general HVM SC certification",
+  "source_fixtures": [
+    "astra_cases/falsifier.issue18.minimal.pct.hvm",
+    "astra_cases/falsifier.issue18.applied_branches.pct.hvm"
+  ],
+  "native_reference": "previously recorded manifest observations; no native rerun",
+  "cases": [
+    {
+      "name": "issue18.minimal",
+      "output": "λa.a",
+      "worlds": 1,
+      "beta_steps": 7,
+      "uses": [
+        {
+          "site": "minimal.s",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              0
+            ]
+          ],
+          "occurrence": "left"
+        },
+        {
+          "site": "minimal.s",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              1
+            ]
+          ],
+          "occurrence": "right"
+        }
+      ],
+      "readings": {
+        "per_copy": {
+          "status": "valid",
+          "world": 0,
+          "resources": {
+            "('minimal.s', 0, (('outer-copy', 'L', 0),))": [
+              "left"
+            ],
+            "('minimal.s', 0, (('outer-copy', 'L', 1),))": [
+              "right"
+            ]
+          }
+        },
+        "per_activation": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('minimal.s', 0)": [
+              "left",
+              "right"
+            ]
+          }
+        },
+        "per_site": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('minimal.s',)": [
+              "left",
+              "right"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "issue18.minimal.observed",
+      "output": "#Token{}",
+      "worlds": 1,
+      "beta_steps": 8,
+      "uses": [
+        {
+          "site": "minimal.s",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              0
+            ]
+          ],
+          "occurrence": "left"
+        },
+        {
+          "site": "minimal.s",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              1
+            ]
+          ],
+          "occurrence": "right"
+        }
+      ],
+      "readings": {
+        "per_copy": {
+          "status": "valid",
+          "world": 0,
+          "resources": {
+            "('minimal.s', 0, (('outer-copy', 'L', 0),))": [
+              "left"
+            ],
+            "('minimal.s', 0, (('outer-copy', 'L', 1),))": [
+              "right"
+            ]
+          }
+        },
+        "per_activation": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('minimal.s', 0)": [
+              "left",
+              "right"
+            ]
+          }
+        },
+        "per_site": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('minimal.s',)": [
+              "left",
+              "right"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "issue18.make_B",
+      "output": "λa.λb.b",
+      "worlds": 1,
+      "beta_steps": 10,
+      "uses": [
+        {
+          "site": "make_B.s",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              0
+            ]
+          ],
+          "occurrence": "left"
+        },
+        {
+          "site": "make_B.s",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              1
+            ]
+          ],
+          "occurrence": "right"
+        }
+      ],
+      "readings": {
+        "per_copy": {
+          "status": "valid",
+          "world": 0,
+          "resources": {
+            "('make_B.s', 0, (('outer-copy', 'L', 0),))": [
+              "left"
+            ],
+            "('make_B.s', 0, (('outer-copy', 'L', 1),))": [
+              "right"
+            ]
+          }
+        },
+        "per_activation": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('make_B.s', 0)": [
+              "left",
+              "right"
+            ]
+          }
+        },
+        "per_site": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('make_B.s',)": [
+              "left",
+              "right"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "issue18.make_B.observed",
+      "output": "#Right{}",
+      "worlds": 1,
+      "beta_steps": 12,
+      "uses": [
+        {
+          "site": "make_B.s",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              0
+            ]
+          ],
+          "occurrence": "left"
+        },
+        {
+          "site": "make_B.s",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              1
+            ]
+          ],
+          "occurrence": "right"
+        }
+      ],
+      "readings": {
+        "per_copy": {
+          "status": "valid",
+          "world": 0,
+          "resources": {
+            "('make_B.s', 0, (('outer-copy', 'L', 0),))": [
+              "left"
+            ],
+            "('make_B.s', 0, (('outer-copy', 'L', 1),))": [
+              "right"
+            ]
+          }
+        },
+        "per_activation": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('make_B.s', 0)": [
+              "left",
+              "right"
+            ]
+          }
+        },
+        "per_site": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('make_B.s',)": [
+              "left",
+              "right"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "jan4.corrected_derivation",
+      "output": "λa.a",
+      "worlds": 1,
+      "beta_steps": 7,
+      "uses": [
+        {
+          "site": "jan4.G",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              0
+            ]
+          ],
+          "occurrence": "left"
+        },
+        {
+          "site": "jan4.G",
+          "activation": 0,
+          "copies": [
+            [
+              "outer-copy",
+              "L",
+              1
+            ]
+          ],
+          "occurrence": "right"
+        }
+      ],
+      "readings": {
+        "per_copy": {
+          "status": "valid",
+          "world": 0,
+          "resources": {
+            "('jan4.G', 0, (('outer-copy', 'L', 0),))": [
+              "left"
+            ],
+            "('jan4.G', 0, (('outer-copy', 'L', 1),))": [
+              "right"
+            ]
+          }
+        },
+        "per_activation": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('jan4.G', 0)": [
+              "left",
+              "right"
+            ]
+          }
+        },
+        "per_site": {
+          "status": "invalid",
+          "world": 0,
+          "resources": {
+            "('jan4.G',)": [
+              "left",
+              "right"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "controls": {
+    "same_copy_pair_output": "#Pair{λa.a,λa.a}",
+    "same_copy_pair_default": {
+      "status": "invalid",
+      "world": 0,
+      "resources": {
+        "('bad.s', 0, (('outer-copy', 'L', 0),))": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    "self_certifying_replacement": {
+      "status": "valid",
+      "world": 0,
+      "resources": {
+        "('bad.s', 0, (('outer-copy', 'L', 0),), 'left')": [
+          "left"
+        ],
+        "('bad.s', 0, (('outer-copy', 'L', 0),), 'right')": [
+          "right"
+        ]
+      }
+    },
+    "erased_alias_semantic": {
+      "status": "valid",
+      "world": 0,
+      "resources": {
+        "('erasure.s', 0, ())": [
+          "left"
+        ]
+      }
+    },
+    "erased_alias_eager_model_reads": {
+      "status": "invalid",
+      "world": 0,
+      "resources": {
+        "('erasure.s', 0, ())": [
+          "left",
+          "right"
+        ]
+      }
+    }
+  },
+  "historical_sides_note": "outer-copy sides 0/1 occur in ONE final result, not two collapse worlds",
+  "target_classification": "not covered by this restricted model"
+}

@@ -1,0 +1,5 @@
+@id = λa.a
+@fst = λa.λb.a
+@snd = λa.λb.b
+@make = λss.λa.λb.% s = ss; λf.f(s(a),s(b))
+@main = ! &x = @make(@id,@fst,@snd); !f = x(@fst); !s = x(@snd); f(s,@id)(#Left{},#Right{})

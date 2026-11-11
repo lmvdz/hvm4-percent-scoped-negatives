@@ -1,0 +1,183 @@
+{
+ "binary": "/home/lars/hoc/HVM4/pinned/hvm_words_macro4/hvm_words_macro4",
+ "binary_sha256": "7a1032c8fbab8a888230cd673f27e6f1bff595e78426565aa8c366dc1e171401",
+ "runner_sha256": "41e2a1c00d8f984c475f886370fee8346f7bf5f97214ef206da23892df694428",
+ "cp1_module_sha256": "d6cda5335febce4ee54df131a2a283eca098925f1db837cdb96cb95b1a54bf1a",
+ "macros": "3",
+ "require_view_diagnostics": true,
+ "viewcheck": true,
+ "scope_target": true,
+ "only": null,
+ "main": {
+  "cases": 1,
+  "inconclusive": [],
+  "commute_published": 14664,
+  "commute_rows": 48410,
+  "nod_published": 2234,
+  "nod_rows": 14320,
+  "cases_exercised": [
+   "TARGET:bounty.published (itrs 97890 -> 52058; commute 14664 words/48410 rows; nod 2234 words/14320 rows)"
+  ],
+  "cases_zero_publication": [],
+  "max_child_ru_maxrss_kb": 72888
+ },
+ "extra": {
+  "astra_word_manifest.json": {
+   "cases": 72,
+   "inconclusive": [],
+   "commute_published": 8,
+   "commute_rows": 158,
+   "nod_published": 41,
+   "nod_rows": 799,
+   "cases_exercised": [
+    "astra_word_manifest.json:word.unary.n2.same.forward (itrs 4 -> 3; commute 0 words/0 rows; nod 1 words/2 rows)",
+    "astra_word_manifest.json:word.sup.n2.same.forward (itrs 9 -> 7; commute 0 words/0 rows; nod 2 words/4 rows)",
+    "astra_word_manifest.json:word.unary_sup.n2.same.forward (itrs 11 -> 8; commute 1 words/2 rows; nod 2 words/4 rows)",
+    "astra_word_manifest.json:word.unary.n2.mixed.forward (itrs 4 -> 3; commute 0 words/0 rows; nod 1 words/2 rows)",
+    "astra_word_manifest.json:word.sup.n2.mixed.forward (itrs 9 -> 7; commute 0 words/0 rows; nod 2 words/4 rows)",
+    "astra_word_manifest.json:word.unary_sup.n2.mixed.forward (itrs 11 -> 8; commute 1 words/2 rows; nod 2 words/4 rows)",
+    "astra_word_manifest.json:word.unary.n8.same.forward (itrs 16 -> 9; commute 0 words/0 rows; nod 1 words/8 rows)",
+    "astra_word_manifest.json:word.sup.n8.same.forward (itrs 33 -> 19; commute 0 words/0 rows; nod 2 words/16 rows)",
+    "astra_word_manifest.json:word.unary_sup.n8.same.forward (itrs 41 -> 20; commute 1 words/8 rows; nod 2 words/16 rows)",
+    "astra_word_manifest.json:word.unary.n8.mixed.forward (itrs 16 -> 9; commute 0 words/0 rows; nod 1 words/8 rows)",
+    "astra_word_manifest.json:word.sup.n8.mixed.forward (itrs 33 -> 19; commute 0 words/0 rows; nod 2 words/16 rows)",
+    "astra_word_manifest.json:word.unary_sup.n8.mixed.forward (itrs 41 -> 20; commute 1 words/8 rows; nod 2 words/16 rows)",
+    "astra_word_manifest.json:word.unary.n64.same.forward (itrs 128 -> 65; commute 0 words/0 rows; nod 1 words/64 rows)",
+    "astra_word_manifest.json:word.sup.n64.same.forward (itrs 257 -> 131; commute 0 words/0 rows; nod 2 words/128 rows)",
+    "astra_word_manifest.json:word.unary_sup.n64.same.forward (itrs 321 -> 132; commute 1 words/64 rows; nod 2 words/128 rows)",
+    "astra_word_manifest.json:word.unary.n64.mixed.forward (itrs 128 -> 65; commute 0 words/0 rows; nod 1 words/64 rows)",
+    "astra_word_manifest.json:word.sup.n64.mixed.forward (itrs 257 -> 131; commute 0 words/0 rows; nod 2 words/128 rows)",
+    "astra_word_manifest.json:word.unary_sup.n64.mixed.forward (itrs 321 -> 132; commute 1 words/64 rows; nod 2 words/128 rows)",
+    "astra_word_manifest.json:word.dormant.n2.forward (itrs 13 -> 11; commute 0 words/0 rows; nod 2 words/4 rows)",
+    "astra_word_manifest.json:word.lambda.public.n2.forward (itrs 16 -> 13; commute 1 words/2 rows; nod 2 words/4 rows)",
+    "astra_word_manifest.json:word.dormant.n8.forward (itrs 43 -> 29; commute 0 words/0 rows; nod 2 words/16 rows)",
+    "astra_word_manifest.json:word.lambda.public.n8.forward (itrs 58 -> 37; commute 1 words/8 rows; nod 2 words/16 rows)",
+    "astra_word_manifest.json:word.lambda.binder.n8.forward (itrs 206 -> 190; commute 0 words/0 rows; nod 3 words/19 rows)"
+   ],
+   "cases_zero_publication": [
+    "astra_word_manifest.json:word.num.n2.same.forward",
+    "astra_word_manifest.json:word.nullary.n2.same.forward",
+    "astra_word_manifest.json:word.num.n2.same.reverse",
+    "astra_word_manifest.json:word.nullary.n2.same.reverse",
+    "astra_word_manifest.json:word.unary.n2.same.reverse",
+    "astra_word_manifest.json:word.sup.n2.same.reverse",
+    "astra_word_manifest.json:word.unary_sup.n2.same.reverse",
+    "astra_word_manifest.json:word.num.n2.mixed.forward",
+    "astra_word_manifest.json:word.nullary.n2.mixed.forward",
+    "astra_word_manifest.json:word.num.n2.mixed.reverse",
+    "astra_word_manifest.json:word.nullary.n2.mixed.reverse",
+    "astra_word_manifest.json:word.unary.n2.mixed.reverse",
+    "astra_word_manifest.json:word.sup.n2.mixed.reverse",
+    "astra_word_manifest.json:word.unary_sup.n2.mixed.reverse",
+    "astra_word_manifest.json:word.num.n8.same.forward",
+    "astra_word_manifest.json:word.nullary.n8.same.forward",
+    "astra_word_manifest.json:word.num.n8.same.reverse",
+    "astra_word_manifest.json:word.nullary.n8.same.reverse",
+    "astra_word_manifest.json:word.unary.n8.same.reverse",
+    "astra_word_manifest.json:word.sup.n8.same.reverse",
+    "astra_word_manifest.json:word.unary_sup.n8.same.reverse",
+    "astra_word_manifest.json:word.num.n8.mixed.forward",
+    "astra_word_manifest.json:word.nullary.n8.mixed.forward",
+    "astra_word_manifest.json:word.num.n8.mixed.reverse",
+    "astra_word_manifest.json:word.nullary.n8.mixed.reverse",
+    "astra_word_manifest.json:word.unary.n8.mixed.reverse",
+    "astra_word_manifest.json:word.sup.n8.mixed.reverse",
+    "astra_word_manifest.json:word.unary_sup.n8.mixed.reverse",
+    "astra_word_manifest.json:word.num.n64.same.forward",
+    "astra_word_manifest.json:word.nullary.n64.same.forward",
+    "astra_word_manifest.json:word.num.n64.same.reverse",
+    "astra_word_manifest.json:word.nullary.n64.same.reverse",
+    "astra_word_manifest.json:word.unary.n64.same.reverse",
+    "astra_word_manifest.json:word.sup.n64.same.reverse",
+    "astra_word_manifest.json:word.unary_sup.n64.same.reverse",
+    "astra_word_manifest.json:word.num.n64.mixed.forward",
+    "astra_word_manifest.json:word.nullary.n64.mixed.forward",
+    "astra_word_manifest.json:word.num.n64.mixed.reverse",
+    "astra_word_manifest.json:word.nullary.n64.mixed.reverse",
+    "astra_word_manifest.json:word.unary.n64.mixed.reverse",
+    "astra_word_manifest.json:word.sup.n64.mixed.reverse",
+    "astra_word_manifest.json:word.unary_sup.n64.mixed.reverse",
+    "astra_word_manifest.json:word.lambda.binder.n2.forward",
+    "astra_word_manifest.json:word.dormant.n2.reverse",
+    "astra_word_manifest.json:word.lambda.public.n2.reverse",
+    "astra_word_manifest.json:word.lambda.binder.n2.reverse",
+    "astra_word_manifest.json:word.dormant.n8.reverse",
+    "astra_word_manifest.json:word.lambda.public.n8.reverse",
+    "astra_word_manifest.json:word.lambda.binder.n8.reverse"
+   ],
+   "max_child_ru_maxrss_kb": 11696
+  },
+  "astra_word_demand_manifest.json": {
+   "cases": 8,
+   "inconclusive": [],
+   "commute_published": 0,
+   "commute_rows": 0,
+   "nod_published": 4,
+   "nod_rows": 20,
+   "cases_exercised": [
+    "astra_word_demand_manifest.json:word.lazy_field.n2.same.forward (itrs 16 -> 15; commute 0 words/0 rows; nod 1 words/2 rows)",
+    "astra_word_demand_manifest.json:word.lazy_field.n2.mixed.forward (itrs 16 -> 15; commute 0 words/0 rows; nod 1 words/2 rows)",
+    "astra_word_demand_manifest.json:word.lazy_field.n8.same.forward (itrs 52 -> 45; commute 0 words/0 rows; nod 1 words/8 rows)",
+    "astra_word_demand_manifest.json:word.lazy_field.n8.mixed.forward (itrs 52 -> 45; commute 0 words/0 rows; nod 1 words/8 rows)"
+   ],
+   "cases_zero_publication": [
+    "astra_word_demand_manifest.json:word.lazy_field.n2.same.reverse",
+    "astra_word_demand_manifest.json:word.lazy_field.n2.mixed.reverse",
+    "astra_word_demand_manifest.json:word.lazy_field.n8.same.reverse",
+    "astra_word_demand_manifest.json:word.lazy_field.n8.mixed.reverse"
+   ],
+   "max_child_ru_maxrss_kb": 11532
+  }
+ },
+ "target": {
+  "itrs_flagoff": 97890,
+  "itrs_macro": 52058,
+  "commute": {
+   "tries": 15088,
+   "published": 14664,
+   "rows": 48410
+  },
+  "scan_bad": {
+   "COMMUTE": 0,
+   "NOD": 0
+  },
+  "nod": {
+   "tries": 2418,
+   "published": 2234,
+   "rows": 14320,
+   "unary": 2226,
+   "atom": 8
+  },
+  "viewfam": {
+   "families": 31554,
+   "finds": 20001,
+   "found": 19928,
+   "role_entries_inspected": 8,
+   "selector_calls": 1675508,
+   "selector_steps": 263694342,
+   "max_depth": 3066,
+   "read_view_candidates": 7999,
+   "births_on_view_tail": 888,
+   "births_on_view_mid": 0
+  },
+  "short": {
+   "short": 424,
+   "classified": 424,
+   "no_row": 6,
+   "singleton": 418,
+   "cur_generated_hit": 0,
+   "below_generated_hit": 373,
+   "certified_view_pairs": 0
+  },
+  "viewcheck": {
+   "on": 1,
+   "mismatches": 0
+  },
+  "wall_flagoff": 0.15823064401047304,
+  "wall_macro": 1.5730886030069087,
+  "maxrss_kb_flagoff": 11528,
+  "maxrss_kb_macro": 72888
+ },
+ "status": "complete",
+ "elapsed_seconds": 22.33977801699075
+}

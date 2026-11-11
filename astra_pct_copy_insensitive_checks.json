@@ -1,0 +1,58 @@
+{
+  "scope": "restricted fixed-case certificate; not native MOV execution or a general target transport proof",
+  "contribution_evidence": "astra_pct_fixed_certificate_results.json",
+  "quantifier_checks": [
+    {
+      "case": "issue18.minimal",
+      "E": true,
+      "Phi_ci": false,
+      "max_per_copy": 1,
+      "max_across_copies": 2
+    },
+    {
+      "case": "issue18.minimal.observed",
+      "E": true,
+      "Phi_ci": false,
+      "max_per_copy": 1,
+      "max_across_copies": 2
+    },
+    {
+      "case": "issue18.make_B",
+      "E": true,
+      "Phi_ci": false,
+      "max_per_copy": 1,
+      "max_across_copies": 2
+    },
+    {
+      "case": "issue18.make_B.observed",
+      "E": true,
+      "Phi_ci": false,
+      "max_per_copy": 1,
+      "max_across_copies": 2
+    },
+    {
+      "case": "jan4.corrected_derivation",
+      "E": true,
+      "Phi_ci": false,
+      "max_per_copy": 1,
+      "max_across_copies": 2
+    }
+  ],
+  "minimal_occurrence_dependency_checks": [
+    {
+      "case": "unchanged",
+      "output": "#Token{}",
+      "beta_steps": 2
+    },
+    {
+      "case": "replace_H",
+      "output": "#Changed{}",
+      "beta_steps": 2
+    },
+    {
+      "case": "replace_J",
+      "output": "#Changed{}",
+      "beta_steps": 2
+    }
+  ]
+}

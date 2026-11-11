@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "reference": {
+    "binary": "../../../../astra-repr/hvm_base",
+    "sha256": "ea6cb779f7a529e4ad2c797d702338affc3edb0dcdd5dba519f07600a2ad56da",
+    "semantics": "lexical-percent-to-cloned-let"
+  },
+  "metadata": {
+    "scope": "Future-corpus additions per Lars decision. Files only; no oracle or native run. The 5365 witness is an E-valid fixed row by paper derivation; labels.percent.* are existing cases, E status UNKNOWN unless separately certified."
+  },
+  "cases": [
+    {
+      "name": "contract.freshening.public_auto_label",
+      "group": "contract",
+      "pct_source": "astra_cases/contract.freshening.public_auto_label.pct.hvm",
+      "c1_source": "astra_cases/contract.freshening.public_auto_label.c1.hvm",
+      "flags": {},
+      "expected_multiset": null,
+      "limits": {
+        "memory_mb": 500,
+        "seconds": 8,
+        "initial_cap": 64,
+        "max_cap": 4096
+      },
+      "provenance": {
+        "origin": "astra_pct_freshening_obstruction.md (Astra review 5365), section 1 paper schema",
+        "e_status": "E-valid by Astra paper derivation (one activation, one world, alias 0 only); NOT an executed certificate",
+        "paper_derived_c1_multiset": {
+          "#Left{}": 1
+        },
+        "paper_derived_unconditional_fresh_multiset": {
+          "#Left{}": 1,
+          "#Right{}": 1
+        },
+        "note": "Paper-derived multisets are NOT recorded oracle expectations; expected_multiset left unset. Requires no earlier auto-dup site so the % fan gets K=8388608 (first parser auto label).",
+        "pct_sha256": "7b1d0ec2d6017c437f3ae7f512492790ed1ad49d4e6ec43cd7c429661439f613",
+        "c1_sha256": "61c63181f678ecac0c04766377fcd94d95ed2edbe3723f489eaf9068ccaab28d"
+      }
+    },
+    {
+      "name": "labels.percent.first_auto",
+      "group": "labels",
+      "pct_source": "../astra_cases/labels.percent.first_auto.pct.hvm",
+      "c1_source": "../astra_cases/labels.percent.first_auto.c1.hvm",
+      "flags": {},
+      "expected_multiset": null,
+      "limits": {
+        "memory_mb": 500,
+        "seconds": 8,
+        "initial_cap": 64,
+        "max_cap": 4096
+      },
+      "provenance": {
+        "purpose": "distinguish source-site C1 labels from global or fresh labels",
+        "pct_sha256": "72accc43dad01fc54bdbdd17b27e2f4502247162696f2cfb427a3ef7ef8751a5",
+        "c1_sha256": "0b46f077acaca5c71289810e04cc285ddb66cf9de1e612f4d8c1ad8d505eae8f",
+        "referenced_from": "astra_manifest.json (unchanged)"
+      }
+    },
+    {
+      "name": "labels.percent.dynamic_auto",
+      "group": "labels",
+      "pct_source": "../astra_cases/labels.percent.dynamic_auto.pct.hvm",
+      "c1_source": "../astra_cases/labels.percent.dynamic_auto.c1.hvm",
+      "flags": {},
+      "expected_multiset": null,
+      "limits": {
+        "memory_mb": 500,
+        "seconds": 8,
+        "initial_cap": 64,
+        "max_cap": 4096
+      },
+      "provenance": {
+        "purpose": "distinguish source-site C1 labels from global or fresh labels",
+        "pct_sha256": "e51cf56e95065d1bb51beb049646e32690d06bbbc92788a35f9691db9c4bc35f",
+        "c1_sha256": "3633194f8cecf2dee602671498896e34674b31b3392a2597f0df31b03722dfa1",
+        "referenced_from": "astra_manifest.json (unchanged)"
+      }
+    },
+    {
+      "name": "labels.percent.global_exc",
+      "group": "labels",
+      "pct_source": "../astra_cases/labels.percent.global_exc.pct.hvm",
+      "c1_source": "../astra_cases/labels.percent.global_exc.c1.hvm",
+      "flags": {},
+      "expected_multiset": null,
+      "limits": {
+        "memory_mb": 500,
+        "seconds": 8,
+        "initial_cap": 64,
+        "max_cap": 4096
+      },
+      "provenance": {
+        "purpose": "distinguish source-site C1 labels from global or fresh labels",
+        "pct_sha256": "5760205049c3c7c7b2732bd1c0bb50aa427439de15bc3fac032dee9a50681f61",
+        "c1_sha256": "3c24c0a6c0c6e77a51b9f634d5c780d1152e331a878afe46df062f3a72dceed1",
+        "referenced_from": "astra_manifest.json (unchanged)"
+      }
+    },
+    {
+      "name": "labels.percent.fresh_candidate",
+      "group": "labels",
+      "pct_source": "../astra_cases/labels.percent.fresh_candidate.pct.hvm",
+      "c1_source": "../astra_cases/labels.percent.fresh_candidate.c1.hvm",
+      "flags": {},
+      "expected_multiset": null,
+      "limits": {
+        "memory_mb": 500,
+        "seconds": 8,
+        "initial_cap": 64,
+        "max_cap": 4096
+      },
+      "provenance": {
+        "purpose": "distinguish source-site C1 labels from global or fresh labels",
+        "pct_sha256": "d6335a84c6dfde1221c2bd41de383af7d7d3284cb8ab2f4ad77dc12318e469b8",
+        "c1_sha256": "fca2556df99542098c1d595e10429246975ce558bc479c0a449147113ded42b4",
+        "referenced_from": "astra_manifest.json (unchanged)"
+      }
+    }
+  ]
+}

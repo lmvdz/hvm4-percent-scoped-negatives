@@ -1,0 +1,5 @@
+@id = λa.a
+@fst = λa.λb.a
+@snd = λa.λb.b
+@make = λss.λf.% s = ss; f(s,s)
+@main = ! &x = @make(@id); !a = x(@fst); !b = x(@snd); a(b)(#Token{})

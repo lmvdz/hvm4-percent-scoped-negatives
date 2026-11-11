@@ -1,0 +1,87 @@
+{
+ "binary": "/home/lars/hoc/HVM4/pinned/hvm_words_macro4/hvm_words_macro4",
+ "binary_sha256": "7a1032c8fbab8a888230cd673f27e6f1bff595e78426565aa8c366dc1e171401",
+ "runner_sha256": "41e2a1c00d8f984c475f886370fee8346f7bf5f97214ef206da23892df694428",
+ "cp1_module_sha256": "d6cda5335febce4ee54df131a2a283eca098925f1db837cdb96cb95b1a54bf1a",
+ "macros": "3",
+ "require_view_diagnostics": true,
+ "viewcheck": false,
+ "scope_target": false,
+ "only": [
+  "non_idempotent.m.n256.mixed",
+  "suite.t1.published_main",
+  "suite.t2.published_main",
+  "suite.t3.published_main",
+  "suite.t4.published_main"
+ ],
+ "main": {
+  "cases": 6,
+  "inconclusive": [],
+  "commute_published": 2380093,
+  "commute_rows": 11622837,
+  "nod_published": 162324,
+  "nod_rows": 2096735,
+  "cases_exercised": [
+   "astra_manifest.json:suite.t1.published_main (itrs 4489714 -> 1255167; commute 638927 words/3329670 rows; nod 33697 words/577501 rows)",
+   "astra_manifest.json:suite.t2.published_main (itrs 1542117 -> 805189; commute 235452 words/779814 rows; nod 34874 words/227440 rows)",
+   "astra_manifest.json:suite.t3.published_main (itrs 4494674 -> 1322227; commute 639452 words/3284030 rows; nod 33697 words/561566 rows)",
+   "astra_manifest.json:suite.t4.published_main (itrs 4494399 -> 1322042; commute 685504 words/3329992 rows; nod 49118 words/576987 rows)",
+   "astra_manifest.json:non_idempotent.m.n256.mixed (itrs 1178657 -> 363613; commute 166094 words/850921 rows; nod 8704 words/138921 rows)",
+   "TARGET:bounty.published (itrs 97890 -> 52058; commute 14664 words/48410 rows; nod 2234 words/14320 rows)"
+  ],
+  "cases_zero_publication": [],
+  "max_child_ru_maxrss_kb": 746100
+ },
+ "extra": {},
+ "target": {
+  "itrs_flagoff": 97890,
+  "itrs_macro": 52058,
+  "commute": {
+   "tries": 15088,
+   "published": 14664,
+   "rows": 48410
+  },
+  "scan_bad": {
+   "COMMUTE": 0,
+   "NOD": 0
+  },
+  "nod": {
+   "tries": 2418,
+   "published": 2234,
+   "rows": 14320,
+   "unary": 2226,
+   "atom": 8
+  },
+  "viewfam": {
+   "families": 31554,
+   "finds": 20001,
+   "found": 19928,
+   "role_entries_inspected": 8,
+   "selector_calls": 1675508,
+   "selector_steps": 0,
+   "max_depth": 3066,
+   "read_view_candidates": 7999,
+   "births_on_view_tail": 888,
+   "births_on_view_mid": 0
+  },
+  "short": {
+   "short": 424,
+   "classified": 424,
+   "no_row": 6,
+   "singleton": 418,
+   "cur_generated_hit": 0,
+   "below_generated_hit": 373,
+   "certified_view_pairs": 0
+  },
+  "viewcheck": {
+   "on": 0,
+   "mismatches": 0
+  },
+  "wall_flagoff": 0.13791381899500266,
+  "wall_macro": 0.2263343039958272,
+  "maxrss_kb_flagoff": 11532,
+  "maxrss_kb_macro": 72888
+ },
+ "status": "complete",
+ "elapsed_seconds": 30.48528099199757
+}

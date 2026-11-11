@@ -1,0 +1,939 @@
+{
+  "schema": "astra-d1-paper-signoff-v1",
+  "scope": "Exact 31 existing door witnesses only; no native/model run, solver, new program or old-certificate edit",
+  "criteria": {
+    "file": "percent_contract_criteria.md",
+    "sha256": "3b7b3b418c620e571f143f6837b79fd115f77d93cb75698243d5ed78a8bc25e0",
+    "reading": "v5 SOURCE-USE"
+  },
+  "review": {
+    "file": "astra_d1_door_review.md",
+    "sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+    "snow_reviewed_revision_prefix": "d381354a"
+  },
+  "ledger_baseline_sha256": "af386a12b5e0a543c284ae631df34ce1dd4400a06340c0192e104a59eff57d1a",
+  "immutable_inputs": {
+    "astra_b8_unsat_audit.json": "f479cfab2fc010f804ad9472fd6e13dd2851f264a2d2ba30a8abfad883b8bb3a",
+    "snow_b8_unsat_constraints.json": "4ed2ff4d3c5bd63316bf1846bc22e1d483d693733f52e63b230018651515900e",
+    "astra_door_manifest.json": "154ea47c0e072bf255e68dc6650407e00ea8245b678d375c182a926021298ce3"
+  },
+  "runtime_fingerprint": {
+    "cand_sha": "041404f14b40987844984aba3aa8a029be9714261916e75f146da8f777f918ae",
+    "ref_sha": "ea6cb779f7a529e4ad2c797d702338affc3edb0dcdd5dba519f07600a2ad56da",
+    "flags": {
+      "HVM_MOVR_INHERIT": "1"
+    },
+    "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json"
+  },
+  "summary": {
+    "programs": 31,
+    "paper_E_valid": 31,
+    "proved_E_invalid": 0,
+    "unknown": 0,
+    "dead_family": 13,
+    "live_family": 18,
+    "source_hash_pairs_verified": 31,
+    "exact_lexical_C1_pairs": 31
+  },
+  "classifications": [
+    {
+      "witness": "door.constructor_sup_own.dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.constructor_sup_own.dead.pct.hvm",
+        "c1_source": "astra_cases/door.constructor_sup_own.dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "63550ab62c276b33355b247d221e8bfefc003a55371fea1be8053387e9879068",
+        "recorded_c1_sha": "ceebff6df4c863129c37d335d020dad3211c32ae53d18f5d9a63679533cf501e",
+        "current_pct_sha": "63550ab62c276b33355b247d221e8bfefc003a55371fea1be8053387e9879068",
+        "current_c1_sha": "ceebff6df4c863129c37d335d020dad3211c32ae53d18f5d9a63679533cf501e",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "constructor_sup_own",
+          "shape": "dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D",
+        "closed_payload": "constructor_sup_own",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.constructor_sup_own.live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.constructor_sup_own.live.pct.hvm",
+        "c1_source": "astra_cases/door.constructor_sup_own.live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "1b56841376a4d1dd9330556a1a3a2cd21253861fbb47fd5ec9b9c0a8d3ba2f37",
+        "recorded_c1_sha": "c1c37c660d8eba21e5304bce9291f3a4a51228812f48b036464d092b2ad347a3",
+        "current_pct_sha": "1b56841376a4d1dd9330556a1a3a2cd21253861fbb47fd5ec9b9c0a8d3ba2f37",
+        "current_c1_sha": "c1c37c660d8eba21e5304bce9291f3a4a51228812f48b036464d092b2ad347a3",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "constructor_sup_own",
+          "shape": "live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L",
+        "closed_payload": "constructor_sup_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.constructor_sup_own.top_dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.constructor_sup_own.top_dead.pct.hvm",
+        "c1_source": "astra_cases/door.constructor_sup_own.top_dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "804eee58407b4becb16fc8c774a55ceca3a48fc2956513f8e7a8071ee1557e2f",
+        "recorded_c1_sha": "0513c7b5b83f2aaff10b4ca129589f8b3f447f3c9846d7c250c7f176784ae4d0",
+        "current_pct_sha": "804eee58407b4becb16fc8c774a55ceca3a48fc2956513f8e7a8071ee1557e2f",
+        "current_c1_sha": "0513c7b5b83f2aaff10b4ca129589f8b3f447f3c9846d7c250c7f176784ae4d0",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "constructor_sup_own",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "constructor_sup_own",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.constructor_sup_own.top_dead.same_label",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.constructor_sup_own.top_dead.same_label.pct.hvm",
+        "c1_source": "astra_cases/door.constructor_sup_own.top_dead.same_label.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "88e3fbc9435c2a8a30a98aceb7902b36f180075d6c34b41cd4a70166a2723812",
+        "recorded_c1_sha": "7aae6dd67397e541788528b1370720794e5e34cd8f560289ad88b2d2b089b6c0",
+        "current_pct_sha": "88e3fbc9435c2a8a30a98aceb7902b36f180075d6c34b41cd4a70166a2723812",
+        "current_c1_sha": "7aae6dd67397e541788528b1370720794e5e34cd8f560289ad88b2d2b089b6c0",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "constructor_sup_own",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "constructor_sup_own",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.constructor_sup_own.top_live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.constructor_sup_own.top_live.pct.hvm",
+        "c1_source": "astra_cases/door.constructor_sup_own.top_live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "59bd6abe242477974af173680df20525b298a4b0b2615992efc5b82e70bf25f0",
+        "recorded_c1_sha": "ab997813aefdb93752908ceb9389be3976866cd844b4facfb771288f8aa00595",
+        "current_pct_sha": "59bd6abe242477974af173680df20525b298a4b0b2615992efc5b82e70bf25f0",
+        "current_c1_sha": "ab997813aefdb93752908ceb9389be3976866cd844b4facfb771288f8aa00595",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "constructor_sup_own",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "constructor_sup_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.constructor_sup_own.top_live.same_label",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.constructor_sup_own.top_live.same_label.pct.hvm",
+        "c1_source": "astra_cases/door.constructor_sup_own.top_live.same_label.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "8f179b6b4563ddb3ba3eb5c628c4346047bdb99b465864acc3c45c6ceb63bbbb",
+        "recorded_c1_sha": "9c1e5e8e25dc84a2ffaecdc422b1ee6214dd0c08e84a74e25a715845d4675e05",
+        "current_pct_sha": "8f179b6b4563ddb3ba3eb5c628c4346047bdb99b465864acc3c45c6ceb63bbbb",
+        "current_c1_sha": "9c1e5e8e25dc84a2ffaecdc422b1ee6214dd0c08e84a74e25a715845d4675e05",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "constructor_sup_own",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "constructor_sup_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam.dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam.dead.pct.hvm",
+        "c1_source": "astra_cases/door.lam.dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "684da8bd331b0c7d9f5e796b911d18b53695413dc394d71ca78f157a089b25d8",
+        "recorded_c1_sha": "c2d7e2693e50c0a2338eb53669681cb9880c0d39a6eae3c4d4ee5372f43269b6",
+        "current_pct_sha": "684da8bd331b0c7d9f5e796b911d18b53695413dc394d71ca78f157a089b25d8",
+        "current_c1_sha": "c2d7e2693e50c0a2338eb53669681cb9880c0d39a6eae3c4d4ee5372f43269b6",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam",
+          "shape": "dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D",
+        "closed_payload": "lam",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam.live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam.live.pct.hvm",
+        "c1_source": "astra_cases/door.lam.live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "43c89169559c40964a7c7fc1772135151dd52a7cb540703164871158327c1f60",
+        "recorded_c1_sha": "b40eec05c174b7c3de52ebcfbb719df7a96b678d9ffd0502fede28c20b1e9578",
+        "current_pct_sha": "43c89169559c40964a7c7fc1772135151dd52a7cb540703164871158327c1f60",
+        "current_c1_sha": "b40eec05c174b7c3de52ebcfbb719df7a96b678d9ffd0502fede28c20b1e9578",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam",
+          "shape": "live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L",
+        "closed_payload": "lam",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam.live_correlated",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam.live_correlated.pct.hvm",
+        "c1_source": "astra_cases/door.lam.live_correlated.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "2d03e708b8f02c8d95e02c7ab9cdbc64a4e3e03200e6c3cea6e1443ee5232ea9",
+        "recorded_c1_sha": "42a91a1ee738552dd5b382cfb921027d7974f379b608a8f576314cf833728c51",
+        "current_pct_sha": "2d03e708b8f02c8d95e02c7ab9cdbc64a4e3e03200e6c3cea6e1443ee5232ea9",
+        "current_c1_sha": "42a91a1ee738552dd5b382cfb921027d7974f379b608a8f576314cf833728c51",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam",
+          "shape": "live_correlated"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + S correlation",
+        "closed_payload": "lam",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam.top_dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam.top_dead.pct.hvm",
+        "c1_source": "astra_cases/door.lam.top_dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "00d77de3942b40ec5fbe52e05c26f07e30231c2cdc49c9a38b77c11224eaafa7",
+        "recorded_c1_sha": "fc2ca13750e0ca11ee58c618b82fd654041d8ee534355caf955047360f0841a9",
+        "current_pct_sha": "00d77de3942b40ec5fbe52e05c26f07e30231c2cdc49c9a38b77c11224eaafa7",
+        "current_c1_sha": "fc2ca13750e0ca11ee58c618b82fd654041d8ee534355caf955047360f0841a9",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "lam",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam.top_dead.same_label",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam.top_dead.same_label.pct.hvm",
+        "c1_source": "astra_cases/door.lam.top_dead.same_label.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "80c2c82172d9bb0f86c594fdfdd6ca4a7560696a03b8a6e060034aa80c4285dc",
+        "recorded_c1_sha": "6fbacae937075191d9958c140ec2efe3093349d2073f39100e2d587fa48394d1",
+        "current_pct_sha": "80c2c82172d9bb0f86c594fdfdd6ca4a7560696a03b8a6e060034aa80c4285dc",
+        "current_c1_sha": "6fbacae937075191d9958c140ec2efe3093349d2073f39100e2d587fa48394d1",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "lam",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam.top_live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam.top_live.pct.hvm",
+        "c1_source": "astra_cases/door.lam.top_live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "3addd8ef00dbeed33845d9b2429dc44a61d23137607504b624fe21e3c6bb4341",
+        "recorded_c1_sha": "24f552f048726e9ead838388364140b048489e7ad2d286798e7616bd710cec1a",
+        "current_pct_sha": "3addd8ef00dbeed33845d9b2429dc44a61d23137607504b624fe21e3c6bb4341",
+        "current_c1_sha": "24f552f048726e9ead838388364140b048489e7ad2d286798e7616bd710cec1a",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "lam",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam.top_live.same_label",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam.top_live.same_label.pct.hvm",
+        "c1_source": "astra_cases/door.lam.top_live.same_label.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "a6a7068886aeb15424cb2d2122c7705b8a10a7f02b07e33c4fc2d9d4ca31b32f",
+        "recorded_c1_sha": "10b1a1a828c263250b2705e78a0d80c6ca1886a5d406f97e3214017dc24f4c84",
+        "current_pct_sha": "a6a7068886aeb15424cb2d2122c7705b8a10a7f02b07e33c4fc2d9d4ca31b32f",
+        "current_c1_sha": "10b1a1a828c263250b2705e78a0d80c6ca1886a5d406f97e3214017dc24f4c84",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "lam",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_enclosing.dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_enclosing.dead.pct.hvm",
+        "c1_source": "astra_cases/door.lam_enclosing.dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "5dca993840f0dfd9aba48beb262486f2a97792e0d1bdf8f8297d4c7d28145f14",
+        "recorded_c1_sha": "a44c2885b474924c9cad8aebf7df308435d6f7a9860aa17908b1dbcaf177aa68",
+        "current_pct_sha": "5dca993840f0dfd9aba48beb262486f2a97792e0d1bdf8f8297d4c7d28145f14",
+        "current_c1_sha": "a44c2885b474924c9cad8aebf7df308435d6f7a9860aa17908b1dbcaf177aa68",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_enclosing",
+          "shape": "dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D",
+        "closed_payload": "lam_enclosing",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_enclosing.live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_enclosing.live.pct.hvm",
+        "c1_source": "astra_cases/door.lam_enclosing.live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "cedf79d1f922e8b9388524bae5dbadda5d706383ad333baa58906fa08bf4aba7",
+        "recorded_c1_sha": "302bc2c54e66a857e698372304f1d7113e72dd8dfe01b1bee4d907deb0193003",
+        "current_pct_sha": "cedf79d1f922e8b9388524bae5dbadda5d706383ad333baa58906fa08bf4aba7",
+        "current_c1_sha": "302bc2c54e66a857e698372304f1d7113e72dd8dfe01b1bee4d907deb0193003",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_enclosing",
+          "shape": "live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L",
+        "closed_payload": "lam_enclosing",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_enclosing.top_dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_enclosing.top_dead.pct.hvm",
+        "c1_source": "astra_cases/door.lam_enclosing.top_dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "153ec9ecd2373851b7258a38c8c5d9ae77fb08e3cbb68910d9c47529b678bb70",
+        "recorded_c1_sha": "7fe6a3d47676f1014bceb784cdd927217d6ee1638895d24bce3be8c068ae23a0",
+        "current_pct_sha": "153ec9ecd2373851b7258a38c8c5d9ae77fb08e3cbb68910d9c47529b678bb70",
+        "current_c1_sha": "7fe6a3d47676f1014bceb784cdd927217d6ee1638895d24bce3be8c068ae23a0",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_enclosing",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "lam_enclosing",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_enclosing.top_live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_enclosing.top_live.pct.hvm",
+        "c1_source": "astra_cases/door.lam_enclosing.top_live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "0c9435ec2267ca763d1fa01f3f0ab0b9d81e2e6a118d5aca4e0e556404d43f94",
+        "recorded_c1_sha": "da15f7089323f8b0130dc947f180bf9bbcbaae33bf85fa160c6f554b06cb3edf",
+        "current_pct_sha": "0c9435ec2267ca763d1fa01f3f0ab0b9d81e2e6a118d5aca4e0e556404d43f94",
+        "current_c1_sha": "da15f7089323f8b0130dc947f180bf9bbcbaae33bf85fa160c6f554b06cb3edf",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_enclosing",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "lam_enclosing",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_named.live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_named.live.pct.hvm",
+        "c1_source": "astra_cases/door.lam_named.live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "363409dd292a9c220473c2879a80a0f945860ee5c105e68b6f19333e24b1e84a",
+        "recorded_c1_sha": "8ba2ed3fd610e4f3c32f608dc0c74c6935d6442f8133cf54c99b716b9664c189",
+        "current_pct_sha": "363409dd292a9c220473c2879a80a0f945860ee5c105e68b6f19333e24b1e84a",
+        "current_c1_sha": "8ba2ed3fd610e4f3c32f608dc0c74c6935d6442f8133cf54c99b716b9664c189",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_named",
+          "shape": "live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L",
+        "closed_payload": "lam_named",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_named.top_live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_named.top_live.pct.hvm",
+        "c1_source": "astra_cases/door.lam_named.top_live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "da3180a676cba7dd4ce91b9d2f24595732becdb1824f7094b5ee12c9c110c494",
+        "recorded_c1_sha": "d83c3293d88ed278a7e2134fc484930a0412c1aa2e1f17b16974f168a96935d3",
+        "current_pct_sha": "da3180a676cba7dd4ce91b9d2f24595732becdb1824f7094b5ee12c9c110c494",
+        "current_c1_sha": "d83c3293d88ed278a7e2134fc484930a0412c1aa2e1f17b16974f168a96935d3",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_named",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "lam_named",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_own.dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_own.dead.pct.hvm",
+        "c1_source": "astra_cases/door.lam_own.dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "83a7403d17c712efb91b75693a2a87e85bd220f3995ee616860fdacd7d19ed89",
+        "recorded_c1_sha": "0a23ddbbab7675210ac4d88e0f89c1a3bcecd64b17ed11fb2ceb57e235815720",
+        "current_pct_sha": "83a7403d17c712efb91b75693a2a87e85bd220f3995ee616860fdacd7d19ed89",
+        "current_c1_sha": "0a23ddbbab7675210ac4d88e0f89c1a3bcecd64b17ed11fb2ceb57e235815720",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_own",
+          "shape": "dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D",
+        "closed_payload": "lam_own",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_own.live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_own.live.pct.hvm",
+        "c1_source": "astra_cases/door.lam_own.live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "31281bbb67f9cf10a47b17a71a305c29ea31ce40aa7722113a1a65e99ada35f8",
+        "recorded_c1_sha": "20093e0ffd8f1675da80a847faf19854cb786511a949476026772419db4501e8",
+        "current_pct_sha": "31281bbb67f9cf10a47b17a71a305c29ea31ce40aa7722113a1a65e99ada35f8",
+        "current_c1_sha": "20093e0ffd8f1675da80a847faf19854cb786511a949476026772419db4501e8",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_own",
+          "shape": "live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L",
+        "closed_payload": "lam_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_own.live_correlated",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_own.live_correlated.pct.hvm",
+        "c1_source": "astra_cases/door.lam_own.live_correlated.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "d7011d7daaa7d5e7e1d279cf31a9130f8615b6ec904e31ec992562cefa774fff",
+        "recorded_c1_sha": "9415e4d4e69e7041e4848341ccc70e3e0b371e5599963b5c300872b0e6f96953",
+        "current_pct_sha": "d7011d7daaa7d5e7e1d279cf31a9130f8615b6ec904e31ec992562cefa774fff",
+        "current_c1_sha": "9415e4d4e69e7041e4848341ccc70e3e0b371e5599963b5c300872b0e6f96953",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_own",
+          "shape": "live_correlated"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + S correlation",
+        "closed_payload": "lam_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_own.top_dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_own.top_dead.pct.hvm",
+        "c1_source": "astra_cases/door.lam_own.top_dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "e562d93d4663972c477be28813d2c13778fe9118eca6fb7bac1e8d600731a086",
+        "recorded_c1_sha": "9788bb9d720130d268cf3ce0299f56459ecc55c5a484ad79f6024be8d7b97ee7",
+        "current_pct_sha": "e562d93d4663972c477be28813d2c13778fe9118eca6fb7bac1e8d600731a086",
+        "current_c1_sha": "9788bb9d720130d268cf3ce0299f56459ecc55c5a484ad79f6024be8d7b97ee7",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_own",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "lam_own",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_own.top_dead.same_label",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_own.top_dead.same_label.pct.hvm",
+        "c1_source": "astra_cases/door.lam_own.top_dead.same_label.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "47937b04f168fbf9dbb70f3d270eba9ff848055ef9c8b537b101656e5d4f6f1c",
+        "recorded_c1_sha": "318e558010f978319120c27b3c217514f11952af0e3bc1d1f8484913a53d26f6",
+        "current_pct_sha": "47937b04f168fbf9dbb70f3d270eba9ff848055ef9c8b537b101656e5d4f6f1c",
+        "current_c1_sha": "318e558010f978319120c27b3c217514f11952af0e3bc1d1f8484913a53d26f6",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_own",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "lam_own",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_own.top_live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_own.top_live.pct.hvm",
+        "c1_source": "astra_cases/door.lam_own.top_live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "0580b340bdaeddfcc405cf7b5276916484d212cc6e7391c54fa82de721ded0db",
+        "recorded_c1_sha": "fd945836568ed55795fefadd030af776c312626786b85b8d661a260d63564c10",
+        "current_pct_sha": "0580b340bdaeddfcc405cf7b5276916484d212cc6e7391c54fa82de721ded0db",
+        "current_c1_sha": "fd945836568ed55795fefadd030af776c312626786b85b8d661a260d63564c10",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_own",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "lam_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.lam_own.top_live.same_label",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.lam_own.top_live.same_label.pct.hvm",
+        "c1_source": "astra_cases/door.lam_own.top_live.same_label.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "b273da389f024d3b15c4b014ba19778e1782a15b47d6b60023fb6fdf33f2ed9e",
+        "recorded_c1_sha": "316584a09e6e126a0a73067d0c4afae30cc559a46fef9bd18337234d75404387",
+        "current_pct_sha": "b273da389f024d3b15c4b014ba19778e1782a15b47d6b60023fb6fdf33f2ed9e",
+        "current_c1_sha": "316584a09e6e126a0a73067d0c4afae30cc559a46fef9bd18337234d75404387",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "lam_own",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "lam_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.sup_enclosing.top_live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.sup_enclosing.top_live.pct.hvm",
+        "c1_source": "astra_cases/door.sup_enclosing.top_live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "9e74e5e5556e8e0ba2b76ba45940e090fec55c3b6a57fc4e9bc63677e6348ece",
+        "recorded_c1_sha": "b407a1cff35d14bcd05414c5d815d817c7b6d86fd6c836f9b2767d98cc53a784",
+        "current_pct_sha": "9e74e5e5556e8e0ba2b76ba45940e090fec55c3b6a57fc4e9bc63677e6348ece",
+        "current_c1_sha": "b407a1cff35d14bcd05414c5d815d817c7b6d86fd6c836f9b2767d98cc53a784",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "sup_enclosing",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "sup_enclosing",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.sup_nested_own.top_dead",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.sup_nested_own.top_dead.pct.hvm",
+        "c1_source": "astra_cases/door.sup_nested_own.top_dead.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "ed616b5afc98b3516100cb6a6ddea2d0fd482e770cfb4a38afec205834b7c15a",
+        "recorded_c1_sha": "56531a73ae81ddf6d2a4fce048ec7ad097fe3d64f02fc2583942b56d170fae35",
+        "current_pct_sha": "ed616b5afc98b3516100cb6a6ddea2d0fd482e770cfb4a38afec205834b7c15a",
+        "current_c1_sha": "56531a73ae81ddf6d2a4fce048ec7ad097fe3d64f02fc2583942b56d170fae35",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "sup_nested_own",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "sup_nested_own",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.sup_nested_own.top_dead.same_label",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.sup_nested_own.top_dead.same_label.pct.hvm",
+        "c1_source": "astra_cases/door.sup_nested_own.top_dead.same_label.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "ef1b07110741bc3ae1bfd9b0e50b5a9948d2186379a0918bc8e83c00bbff46cb",
+        "recorded_c1_sha": "4d7d2cf57c81337322c17b763e419d67ab2c3d7519de9a8d8c9b7314fade3919",
+        "current_pct_sha": "ef1b07110741bc3ae1bfd9b0e50b5a9948d2186379a0918bc8e83c00bbff46cb",
+        "current_c1_sha": "4d7d2cf57c81337322c17b763e419d67ab2c3d7519de9a8d8c9b7314fade3919",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "sup_nested_own",
+          "shape": "top_dead"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "D + ordinary data copying",
+        "closed_payload": "sup_nested_own",
+        "contribution_bound": "subset {v0} in every reference world",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.sup_nested_own.top_live",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.sup_nested_own.top_live.pct.hvm",
+        "c1_source": "astra_cases/door.sup_nested_own.top_live.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "abae63ddc376ae4f3b9064f00c245f80db40a65f7f51d482b4eed9bf80342305",
+        "recorded_c1_sha": "531a793e6e1b3af597237dcfc814efc391a2db7463f1781fdca98fa4aea2f8ee",
+        "current_pct_sha": "abae63ddc376ae4f3b9064f00c245f80db40a65f7f51d482b4eed9bf80342305",
+        "current_c1_sha": "531a793e6e1b3af597237dcfc814efc391a2db7463f1781fdca98fa4aea2f8ee",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "sup_nested_own",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "sup_nested_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    },
+    {
+      "witness": "door.sup_nested_own.top_live.same_label",
+      "identity": {
+        "manifest": "/home/lars/hoc/fusion/astra_challenge/search/astra_door_manifest.json",
+        "pct_source": "astra_cases/door.sup_nested_own.top_live.same_label.pct.hvm",
+        "c1_source": "astra_cases/door.sup_nested_own.top_live.same_label.c1.hvm",
+        "flags": {},
+        "recorded_pct_sha": "2e3a82033cb5d4132bc481287bfd2499020f461f052dde31fb19d43437577ab1",
+        "recorded_c1_sha": "32d5822dd4ff403d6a8d8890d57faf49f61ef646b54f67f424abc5cc7cb5d9be",
+        "current_pct_sha": "2e3a82033cb5d4132bc481287bfd2499020f461f052dde31fb19d43437577ab1",
+        "current_c1_sha": "32d5822dd4ff403d6a8d8890d57faf49f61ef646b54f67f424abc5cc7cb5d9be",
+        "provenance": {
+          "family": "door_coverage",
+          "value_kind": "sup_nested_own",
+          "shape": "top_live"
+        }
+      },
+      "classification": "E_VALID_CERT",
+      "evidence_kind": "finite paper proof under v5 SOURCE-USE; not an executed E checker",
+      "signed_by": "ASTRA",
+      "proof": {
+        "review_file": "astra_d1_door_review.md",
+        "review_sha256": "cd4dd6dc016ead8c0970156113785de813ac7c0a5c0cc26bf3069eb1e925973c",
+        "context": "I + L + ordinary data copying + S correlation",
+        "closed_payload": "sup_nested_own",
+        "contribution_bound": "subset {v_s} in each reference world with outer S=s",
+        "resource": "one activation, empty enclosing/capturing-copy history; replacement K does not fork identity"
+      }
+    }
+  ]
+}
